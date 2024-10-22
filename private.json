@@ -3,6 +3,7 @@
   "extends": [
     "github>hollanbm/renovate-config"
   ],
+  "internalChecksAsSuccess": true,
   "packageRules": [
     {
       "matchUpdateTypes": [
