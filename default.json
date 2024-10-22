@@ -1,0 +1,116 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "mergeConfidence:all-badges"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchCategories": [
+        "ruby"
+      ],
+      "addLabels": [
+        "ruby"
+      ]
+    },
+    {
+      "matchCategories": [
+        "js"
+      ],
+      "addLabels": [
+        "js"
+      ]
+    },
+    {
+      "matchCategories": [
+        "node"
+      ],
+      "addLabels": [
+        "node"
+      ]
+    },
+    {
+      "matchCategories": [
+        "java"
+      ],
+      "addLabels": [
+        "java"
+      ]
+    },
+    {
+      "matchCategories": [
+        "python"
+      ],
+      "addLabels": [
+        "python"
+      ]
+    },
+    {
+      "matchCategories": [
+        "ci"
+      ],
+      "addLabels": [
+        "ci"
+      ]
+    },
+    {
+      "matchCategories": [
+        "docker"
+      ],
+      "addLabels": [
+        "docker"
+      ]
+    },
+    {
+      "matchCategories": [
+        "helm"
+      ],
+      "addLabels": [
+        "helm"
+      ]
+    },
+    {
+      "matchCategories": [
+        "kubernete"
+      ],
+      "addLabels": [
+        "kubernete"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "addLabels": [
+        "patch"
+      ],
+      "automerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "addLabels": [
+        "minor"
+      ],
+      "automerge": true,
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false,
+      "addLabels": [
+        "major"
+      ]
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
