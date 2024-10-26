@@ -104,10 +104,11 @@
       "matchUpdateTypes": [
         "major"
       ],
-      "enabled": false,
       "addLabels": [
         "major"
-      ]
+      ],
+      "dependencyDashboardApproval": true,
+      "automerge": false
     }
   ],
   "vulnerabilityAlerts": {
