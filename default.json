@@ -82,6 +82,16 @@
     },
     {
       "matchUpdateTypes": [
+        "digest"
+      ],
+      "addLabels": [
+        "digest"
+      ],
+      "automerge": true,
+      "minimumReleaseAge": "1 days"
+    },
+    {
+      "matchUpdateTypes": [
         "patch"
       ],
       "addLabels": [

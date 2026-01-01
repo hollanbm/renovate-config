@@ -8,8 +8,8 @@
     {
       "matchUpdateTypes": [
         "digest",
-        "minor",
-        "patch"
+        "patch",
+        "minor"
       ],
       "platformAutomerge": false
     }
