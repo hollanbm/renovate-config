@@ -1,0 +1,28 @@
+name: renovate-config-validator
+
+on: # yamllint disable-line rule:truthy
+  workflow_dispatch:
+  push:
+    paths:
+      - "default.json"
+      - "private.json"
+  pull_request:
+    paths:
+      - "default.json"
+      - "private.json"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate default.json
+        uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.1
+        with:
+          config_file_path: default.json
+          strict: "true"
+
+      - name: Validate private.json
+        uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.1
+        with:
+          config_file_path: private.json
+          strict: "true"
