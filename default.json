@@ -7,97 +7,17 @@
   "labels": [
     "dependencies"
   ],
+  "automerge": true,
+  "minimumReleaseAge": "1 day",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
   "packageRules": [
     {
-      "matchCategories": [
-        "ruby"
-      ],
-      "addLabels": [
-        "ruby"
-      ]
-    },
-    {
-      "matchCategories": [
-        "js"
-      ],
-      "addLabels": [
-        "js"
-      ]
-    },
-    {
-      "matchCategories": [
-        "node"
-      ],
-      "addLabels": [
-        "node"
-      ]
-    },
-    {
-      "matchCategories": [
-        "java"
-      ],
-      "addLabels": [
-        "java"
-      ]
-    },
-    {
-      "matchCategories": [
-        "python"
-      ],
-      "addLabels": [
-        "python"
-      ]
-    },
-    {
-      "matchCategories": [
-        "ci"
-      ],
-      "addLabels": [
-        "ci"
-      ]
-    },
-    {
-      "matchCategories": [
-        "docker"
-      ],
-      "addLabels": [
-        "docker"
-      ]
-    },
-    {
-      "matchCategories": [
-        "helm"
-      ],
-      "addLabels": [
-        "helm"
-      ]
-    },
-    {
-      "matchCategories": [
-        "kubernete"
-      ],
-      "addLabels": [
-        "kubernete"
-      ]
-    },
-    {
-      "matchUpdateTypes": [
-        "digest"
-      ],
-      "addLabels": [
-        "digest"
-      ],
-      "automerge": true,
-      "minimumReleaseAge": "1 day"
-    },
-    {
       "matchUpdateTypes": [
         "patch"
       ],
       "addLabels": [
         "patch"
       ],
-      "automerge": true,
       "minimumReleaseAge": "3 days"
     },
     {
@@ -107,7 +27,6 @@
       "addLabels": [
         "minor"
       ],
-      "automerge": true,
       "minimumReleaseAge": "7 days"
     },
     {

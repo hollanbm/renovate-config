@@ -4,14 +4,21 @@
     "github>hollanbm/renovate-config"
   ],
   "internalChecksAsSuccess": true,
+  "platformAutomerge": false,
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "digest",
-        "patch",
         "minor"
       ],
-      "platformAutomerge": false
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true,
+      "automerge": false
     }
   ]
 }
