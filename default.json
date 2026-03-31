@@ -7,6 +7,9 @@
   "labels": [
     "dependencies"
   ],
+  "pre-commit": {
+    "enabled": true
+  },
   "automerge": true,
   "minimumReleaseAge": "1 day",
   "minimumReleaseAgeBehaviour": "timestamp-required",
