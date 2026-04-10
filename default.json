@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "mergeConfidence:all-badges"
+    "mergeConfidence:all-badges",
+    "docker:pinDigests"
   ],
   "labels": [
     "dependencies"
